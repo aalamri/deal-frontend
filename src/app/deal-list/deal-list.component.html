@@ -1,0 +1,25 @@
+<div class="col-md-6">
+  <h2> Deal Details</h2>
+
+  <table class="table">
+    <thead>
+    <tr>
+      <th class="hidden">Id</th>
+      <th>Deal Category</th>
+      <th>Deal Partner</th>
+      <th>Deal Price</th>
+      <th>Action</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let deal of deals">
+      <td class="hidden"></td>
+      <td>{{deal.id}}</td>
+      <td>{{deal.dealCategory}}</td>
+      <td>{{deal.dealPartner}}</td>
+      <td>{{deal.dealPrice}}</td>
+      <td><button class="btn btn-danger" (click)="deleteDeal(deal)"> Delete Deal</button></td>
+    </tr>
+    </tbody>
+  </table>
+</div>

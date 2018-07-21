@@ -1,0 +1,21 @@
+<div class="col-md-6">
+  <h2 class="text-center">Add Deal</h2>
+  <form>
+    <div class="form-group">
+      <label for="dealCategory">Deal category:</label>
+      <input type="name" [(ngModel)]="deal.dealCategory" placeholder="Category" name="dealCategory" class="form-control" id="dealCategory">
+    </div>
+
+    <div class="form-group">
+      <label for="dealPartner">Deal Partner:</label>
+      <input [(ngModel)]="deal.dealPartner" placeholder="Deal Partner" name="dealPartner" class="form-control" id="dealPartner">
+    </div>
+
+    <div class="form-group">
+      <label for="dealPrice">Deal Price:</label>
+      <input [(ngModel)]="deal.dealPrice" placeholder="Deal Price" name="dealPrice" class="form-control" id="dealPrice">
+    </div>
+
+    <button class="btn btn-success" (click)="createDeal()">Create</button>
+  </form>
+</div>
